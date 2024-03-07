@@ -4,8 +4,6 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 const App = () => {
   const [message, setMessage] = useState('');
 
-  console.log('message', message);
-
   async function fetchHello() {
     const response = await fetch('/api/hello');
     const data = await response.json();
