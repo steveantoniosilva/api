@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   buttonText: {
-      color: 'white',
-      fontSize: 18,
+    color: 'white',
+    fontSize: 18,
   },
 });
 
