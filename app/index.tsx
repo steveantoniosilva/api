@@ -5,7 +5,7 @@ const App = () => {
   const [message, setMessage] = useState('');
 
   async function fetchHello() {
-    const response = await fetch('/api/hello');
+    const response = await fetch('/api-routes/hello');
     const data = await response.json();
     setMessage(data.message);
   }
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    justifyContent: 'space-evenly',
+    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'black',
   },
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     borderRadius: 33,
     borderColor: 'white',
     borderWidth: 1,
+    marginVertical: 111,
   },
   buttonText: {
     color: 'white',
