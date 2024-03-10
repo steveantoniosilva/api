@@ -14,9 +14,16 @@ const App = () => {
   return (
     <View style={styles.view}>
       <View style={styles.container}>
-        <Text style={{ color: 'white' }}>{message}</Text>
+        <Text style={{ color: 'white' }}>Blog Post</Text>
         <TextInput
-          style={{ color: 'white', backgroundColor: 'red', width: '95%', textAlign: 'center', marginVertical: 11, height: 111 }}
+          style={{
+            color: 'white',
+            backgroundColor: 'red',
+            width: '95%',
+            textAlign: 'center',
+            marginVertical: 11,
+            height: 111,
+          }}
           onChangeText={setTitle}
           value={title}
           multiline={true}
@@ -26,7 +33,14 @@ const App = () => {
           maxLength={18}
         />
         <TextInput
-          style={{ color: 'white', backgroundColor: 'red', width: '95%', textAlign: 'center', marginVertical: 11, height: 111 }}
+          style={{
+            color: 'white',
+            backgroundColor: 'red',
+            width: '95%',
+            textAlign: 'center',
+            marginVertical: 11,
+            height: 111,
+          }}
           onChangeText={setMessage}
           value={message}
           multiline={true}
