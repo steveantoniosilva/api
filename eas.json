@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "promptToConfigurePushNotifications": false,
+    "appVersionSource": "remote",
+    "requireCommit": true
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "developmentClient": true
+    },
+    "simulator": {
+      "ios": {
+        "simulator": true,
+        "developmentClient": true
+      }
+    },
+    "production": {
+      "channel": "production",
+      "distribution": "store",
+      "autoIncrement": true
+    }
+  }
+}
